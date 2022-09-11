@@ -52,7 +52,6 @@ void FakeLooper::prepare() {
 #endif
 
     Log::info("Launcher", "Creating window");
-
     associatedWindow = GameWindowManager::getManager()->createWindow("Minecraft",
             options.windowWidth, options.windowHeight, options.graphicsApi);
     associatedWindow->makeCurrent(false);
